@@ -4,107 +4,118 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/main.css">
-    <title>TRANSIC | Sim-to-Real Policy Transfer by Learning from Online Correction</title>
-
-
+    <title>RoboPack | Learning Tactile-Informed Dynamics Models for Dense Packing</title>
 </head>
 <body>
 
-<div class="full-page-image">
-    <video id="bg-video" autoplay loop muted playsinline>
-        <source src="assets/videos/full_screen.mp4" type="video/mp4">
-    </video>
-    <div class="overlay"></div>
-    <div class="content" style="padding: 0 20px">
-        <h1>T<span style="font-variant-caps:all-small-caps;">RANSIC</span>: Sim-to-Real Policy Transfer by Learning from
-            Online Correction</h1>
-        <p>An RL sim-to-real policy trained with T<span style="font-variant-caps:all-small-caps;">RANSIC</span>
-            successfully
-            completes a long-horizon and contact-rich task: assembling a table lamp from scratch.</p>
-    </div>
-</div>
+<!--<div class="full-page-image">-->
+<!--    <video id="bg-video" autoplay loop muted playsinline>-->
+<!--        <source src="assets/videos/full_screen.mp4" type="video/mp4">-->
+<!--    </video>-->
+<!--    <div class="overlay"></div>-->
+<!--    <div class="content" style="padding: 0 20px">-->
+<!--        <h1>T<span style="font-variant-caps:all-small-caps;">RANSIC</span>: Sim-to-Real Policy Transfer by Learning from-->
+<!--            Online Correction</h1>-->
+<!--        <p>An RL sim-to-real policy trained with T<span style="font-variant-caps:all-small-caps;">RANSIC</span>-->
+<!--            successfully-->
+<!--            completes a long-horizon and contact-rich task: assembling a table lamp from scratch.</p>-->
+<!--    </div>-->
+<!--</div>-->
 
 <div id="title_slide">
     <div class="title_left">
-        <h1>T<span style="font-variant-caps:all-small-caps;">RANSIC</span>: Sim-to-Real Policy Transfer <br>by Learning
-            from Online Correction</h1>
+        <h1>RoboPack: Learning Tactile-Informed <br>Dynamics Models for Dense Packing</h1>
+
+        <div style="height: 1.5vw;"></div>
         <div class="author-container">
-            <div class="author-name"><a href="" target="_blank">Yunfan Jiang<sup>†</sup></a></div>
-            <div class="author-name"><a href="" target="_blank">Chen Wang<sup>†</sup></a></div>
-            <div class="author-name"><a href="" target="_blank">Ruohan Zhang<sup>†&#8225;</sup></a></div>
-            <div class="author-name"><a href="" target="_blank">Jiajun Wu<sup>†&#8225;</sup></a></div>
-            <div class="author-name"><a href="" target="_blank">Fei-Fei Li<sup>†&#8225;</sup></a></div>
+            <div class="author-name"><a href="http://albertboai.com/" target="_blank">Bo Ai*<sup>1,2,4</sup></a></div>
+            <div class="author-name"><a href="https://s-tian.github.io/" target="_blank">Stephen Tian*<sup>2</sup></a></div>
+            <div class="author-name"><a href="https://hshi74.github.io/" target="_blank">Haochen Shi<sup>2</sup></a></div>
+            <div class="author-name"><a href="https://wangyixuan12.github.io/" target="_blank">Yixuan Wang<sup>3</sup></a></div>
         </div>
+        <div class="author-container">
+            <div class="author-name"><a href="https://www.a-star.edu.sg/cfar/about-cfar/our-team/dr-cheston-tan" target="_blank">Cheston Tan<sup>1</sup></a></div>
+            <div class="author-name"><a href="https://yunzhuli.github.io/" target="_blank">Yunzhu Li<sup>3</sup></a></div>
+            <div class="author-name"><a href="https://jiajunwu.com/" target="_blank">Jiajun Wu<sup>2</sup></a></div>
+        </div>
+        <div class="author-container">
+            <div class="author-name">(* equal contribution)</div>
+        </div>
+
         <div class="affiliation">
-            <p><sup>†</sup>Department of Computer Science <sup>&#8225;</sup>Institute for Human-Centered AI
-                (HAI)<br><img src="assets/logos/SUSig-red.png" style="height: 50px"></p>
+            <p><sup>1</sup> Agency for Science, Technology and Research (A*STAR), Singapore</p>
+            <p><sup>2</sup> Stanford University, USA</p>
+            <p><sup>3</sup> University of Illinois at Urbana-Champaign, USA</p>
+            <p><sup>4</sup> National University of Singapore, Singapore</p>
         </div>
-        <div class="button-container">
-            <a href="" target="_blank" class="button"><i class="ai ai-arxiv"></i>&emsp14;arXiv</a>
-            <a href="" target="_blank" class="button"><i class="fa-light fa-file"></i>&emsp14;PDF</a>
-            <a href="" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a>
-            <a href="" target="_blank" class="button"><i class="fa-light fa-code"></i>&emsp14;Code</a>
-            <a href="" target="_blank" class="button"><i class="fa-light fa-face-smiling-hands"></i>&emsp14;Data</a>
-            <a href="" target="_blank" class="button"><i class="fa-light fa-robot-astromech"></i>&emsp14;Models</a>
-        </div>
+        <div style="height: 1.5vw;"></div>
+
+<!--        <div class="button-container">-->
+<!--            <a href="" target="_blank" class="button"><i class="ai ai-arxiv"></i>&emsp14;arXiv</a>-->
+<!--            <a href="" target="_blank" class="button"><i class="fa-light fa-file"></i>&emsp14;PDF</a>-->
+<!--            <a href="" target="_blank" class="button"><i class="fa-brands fa-x-twitter"></i>&emsp14;tl;dr</a>-->
+<!--            <a href="" target="_blank" class="button"><i class="fa-light fa-code"></i>&emsp14;Code</a>-->
+<!--            <a href="" target="_blank" class="button"><i class="fa-light fa-face-smiling-hands"></i>&emsp14;Data</a>-->
+<!--            <a href="" target="_blank" class="button"><i class="fa-light fa-robot-astromech"></i>&emsp14;Models</a>-->
+<!--        </div>-->
 
         <br>
 
         <div class="slideshow-container">
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/square_table.mp4" type="video/mp4">
+                    <source src="assets/videos/packing/1-2-12x.mp4" type="video/mp4">
                 </video>
-                <div class="text">Assemble a square table.</div>
+                <div class="text">Placing a red coke can into a tray using only tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/lamp1.mp4" type="video/mp4">
+                    <source src="assets/videos/pushing/1-1-16x.m4v" type="video/mp4">
                 </video>
-                <div class="text">Assemble a table lamp.</div>
+                <div class="text">Pushing a purple box with an unobserved mass distribution using visual-tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/stabilize.mp4" type="video/mp4">
+                    <source src="assets/videos/packing/1-3-12x.mp4" type="video/mp4">
                 </video>
-                <div class="text">Stabilize the square tabletop by pushing it to the right corner of the wall.</div>
+                <div class="text">Placing a red coke can into a tray using only tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/grasp_and_insert_bulb.mp4" type="video/mp4">
+                    <source src="assets/videos/pushing/1-3-16x.m4v" type="video/mp4">
                 </video>
-                <div class="text">Grasp a light bulb and insert it into the lamp base.</div>
+                <div class="text">Pushing a pink box with an unobserved mass distribution using visual-tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/screw.mp4" type="video/mp4">
+                    <source src="assets/videos/packing/3-1-12x.mp4" type="video/mp4">
                 </video>
-                <div class="text">Screw a table leg into the square tabletop.</div>
+                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/grasp_bulb.mp4" type="video/mp4">
+                    <source src="assets/videos/pushing/2-3-16x.m4v" type="video/mp4">
                 </video>
-                <div class="text">Reach and grasp a quasi-static light bulb.</div>
+                <div class="text">Pushing a pink box with an unobserved mass distribution using visual-tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/insert.mp4" type="video/mp4">
+                    <source src="assets/videos/packing/3-3-12x.mp4" type="video/mp4">
                 </video>
-                <div class="text">Insert a table leg into the assembly hole of the square tabletop.</div>
+                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>
             </div>
 
             <div class="mySlides fade">
                 <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pull/screw_bulb.mp4" type="video/mp4">
+                    <source src="assets/videos/pushing/3-3-16x.m4v" type="video/mp4">
                 </video>
-                <div class="text">Screw a light bulb into the base.</div>
+                <div class="text">Pushing a purple box with an unobserved mass distribution using visual-tactile feedback.</div>
             </div>
 
             <!-- Next and previous buttons -->
@@ -127,22 +138,7 @@
         <div id="abstract">
             <h1>Abstract</h1>
             <p>
-                Learning in simulation and transferring the learned policy to the real world has the potential to enable
-                generalist robots. The key challenge of this approach is to address simulation-to-reality (sim-to-real)
-                gaps. Previous methods often require domain-specific knowledge a priori. We argue that a straightforward
-                way for humans to obtain such knowledge is to observe and assist robot policy execution in the real
-                world. Such knowledge can be learned from humans by the robot to close various sim-to-real gaps. We
-                propose T<span style="font-variant-caps:all-small-caps;">RANSIC</span>, a data-driven approach to enable
-                successful sim-to-real transfer based on a
-                human-in-the-loop framework. T<span style="font-variant-caps:all-small-caps;">RANSIC</span> allows
-                humans to augment simulation policies to overcome various
-                unmodeled sim-to-real gaps holistically through intervention and online correction. Residual policies
-                can be learned from human corrections and integrated with simulation policies for autonomous execution.
-                We show that our approach can achieve successful sim-to-real transfer in complex and contact-rich
-                manipulation tasks such as furniture assembly. Through synergistic integration of policies learned in
-                simulation and from humans, T<span style="font-variant-caps:all-small-caps;">RANSIC</span> is effective
-                as a holistic approach to addressing various, often
-                coexisting sim-to-real gaps. It displays attractive properties such as scaling with human effort.
+                Tactile feedback is critical for understanding the dynamics of both rigid and deformable objects in many manipulation tasks, such as non-prehensile manipulation and dense packing. We introduce an approach that combines visual and tactile sensing for robotic manipulation by learning a neural, tactile-informed dynamics model. Our proposed framework, RoboPack, employs a recurrent graph neural network to estimate object states, including particles and object-level latent physics information, from historical visuo-tactile observations and to perform future state predictions. Our tactile-informed dynamics model, learned from real-world data, can solve downstream robotics tasks with model-predictive control. We demonstrate our approach on a real robot equipped with a compliant Soft-Bubble tactile sensor on non-prehensile manipulation and dense packing tasks, where the robot must infer the physics properties of objects from direct and indirect interactions. Trained on only an average of 30 minutes of real-world interaction data per task, our model can perform online adaptation and make touch-informed predictions. Through extensive evaluations in both long-horizon dynamics prediction and real-world manipulation, our method demonstrates superior effectiveness compared to previous learning-based and physics-based simulation systems.
             </p>
         </div>
     </div>

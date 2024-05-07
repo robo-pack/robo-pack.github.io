@@ -133,8 +133,8 @@ body, html {
     color: #2E2D29;
     font-family: "Source Serif 4", serif;
     font-weight: normal;
-    font-size: 1vw;
-    padding-top: 1.5vw;
+    font-size: 1.2vw;
+    padding-top: 0vw;
     justify-items: center;
     justify-content: center;
     display: grid;
