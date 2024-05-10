@@ -90,33 +90,33 @@
                 <div class="text">Pushing a pink box with an unobserved mass distribution using visual-tactile feedback.</div>
             </div>
 
-            <div class="mySlides fade">
-                <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/packing/3-1-12x.mp4" type="video/mp4">
-                </video>
-                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>
-            </div>
+<!--            <div class="mySlides fade">-->
+<!--                <video autoplay muted playsinline loop preload="metadata" width="100%">-->
+<!--                    <source src="assets/videos/packing/3-1-12x.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>-->
+<!--            </div>-->
 
-            <div class="mySlides fade">
-                <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pushing/2-3-16x.m4v" type="video/mp4">
-                </video>
-                <div class="text">Pushing a pink box with an unobserved mass distribution using visual-tactile feedback.</div>
-            </div>
+<!--            <div class="mySlides fade">-->
+<!--                <video autoplay muted playsinline loop preload="metadata" width="100%">-->
+<!--                    <source src="assets/videos/pushing/2-3-16x.m4v" type="video/mp4">-->
+<!--                </video>-->
+<!--                <div class="text">Pushing a pink box with an unobserved mass distribution using visual-tactile feedback.</div>-->
+<!--            </div>-->
 
-            <div class="mySlides fade">
-                <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/packing/3-3-12x.mp4" type="video/mp4">
-                </video>
-                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>
-            </div>
+<!--            <div class="mySlides fade">-->
+<!--                <video autoplay muted playsinline loop preload="metadata" width="100%">-->
+<!--                    <source src="assets/videos/packing/3-3-12x.mp4" type="video/mp4">-->
+<!--                </video>-->
+<!--                <div class="text">Placing a green coke can into a tray using only tactile feedback.</div>-->
+<!--            </div>-->
 
-            <div class="mySlides fade">
-                <video autoplay muted playsinline loop preload="metadata" width="100%">
-                    <source src="assets/videos/pushing/3-3-16x.m4v" type="video/mp4">
-                </video>
-                <div class="text">Pushing a purple box with an unobserved mass distribution using visual-tactile feedback.</div>
-            </div>
+<!--            <div class="mySlides fade">-->
+<!--                <video autoplay muted playsinline loop preload="metadata" width="100%">-->
+<!--                    <source src="assets/videos/pushing/3-3-16x.m4v" type="video/mp4">-->
+<!--                </video>-->
+<!--                <div class="text">Pushing a purple box with an unobserved mass distribution using visual-tactile feedback.</div>-->
+<!--            </div>-->
 
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -130,10 +130,10 @@
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
             <span class="dot" onclick="currentSlide(4)"></span>
-            <span class="dot" onclick="currentSlide(5)"></span>
-            <span class="dot" onclick="currentSlide(6)"></span>
-            <span class="dot" onclick="currentSlide(7)"></span>
-            <span class="dot" onclick="currentSlide(8)"></span>
+<!--            <span class="dot" onclick="currentSlide(5)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(6)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(7)"></span>-->
+<!--            <span class="dot" onclick="currentSlide(8)"></span>-->
         </div>
         <div id="abstract">
             <h1>Abstract</h1>
@@ -143,7 +143,9 @@
         </div>
     </div>
 </div>
+
 <hr class="rounded">
+
 <div id="overview">
     <h1>Motivation</h1>
     <!--        <embed src="assets/img/teaser-2.pdf" width="800px" height="2100px" />-->
@@ -166,6 +168,7 @@
         challenging for current robotic systems.
     </p>
 
+
     <div class="video_container">
         <video loop autoplay muted playsinline preload="metadata">
             <source src="assets/videos/human-daily-manipulation-2x2.m4v" type="video/mp4">
@@ -186,14 +189,17 @@
 
     <h1>Method Overview</h1>
     <p>
-        RoboPack is a framework that integrates tactile-informed state estimation, dynamics prediction with model
-        predictive control for manipulating objects with uncertain physical properties.
+        <b>
+            RoboPack is a framework that integrates tactile-informed state estimation, dynamics prediction with model
+            predictive control for manipulating objects with unknown physical properties.
+        </b>
     </p>
 
     <p>
         At the core of our framework is a particle-based representation that contains visual, tactile, and physics
-        information. We first extract particles from the scene, then encode tactile reading, as well as, a
-        learned latent object-level physics vector as particle attributes.
+        information.
+<!--        We first extract particles from the scene, then encode tactile reading, as well as, a-->
+<!--        learned latent object-level physics vector as particle attributes.-->
     </p>
 
     <div class="video_container">
@@ -229,12 +235,12 @@
         of obtaining complete visual observation of the world when severe visual occlusions are present.
     </p>
 
-    <p>
-        For a more technically accurate and detailed description of our framework, please refer to our paper. What is
-        not covered here includes our Dino Field-based tracking system, a mathematical description of our (recurrent)
-        graph neural network-based state estimator and dynamics predictor, and the implementation of our
-        model-predictive controller.
-    </p>
+<!--    <p>-->
+<!--        For a more technically accurate and detailed description of our framework, please refer to our paper. What is-->
+<!--        not covered here includes our Dino Field-based tracking system, a mathematical description of our (recurrent)-->
+<!--        graph neural network-based state estimator and dynamics predictor, and the implementation of our-->
+<!--        model-predictive controller.-->
+<!--    </p>-->
 
     <h1>Experimental Setup</h1>
     <p>
@@ -260,7 +266,7 @@
     <h1>Dynamics Prediction Performance</h1>
     <p>
         We first evaluate our method on dynamics prediction for two tasks.
-        It can be observed that our method outperforms other methods quantitatively and qualitatively.
+<!--        It can be observed that our method outperforms other methods quantitatively and qualitatively.-->
     </p>
 
     <div class="video_container" style="text-align: center">
@@ -278,11 +284,11 @@
             <div class="caption" style="text-align: left">
                 <p>
                     Qualitative results on dynamics prediction.
-                    Predictions made by our model compared to baseline methods in the Non-prehensile Box Pushing task.
-                    Red dots indicate the rod and blue dots represent the box.
-                    Our method closely approximates the ground truth and outperforms all the baseline methods.
-                    For visualization, the blue dashed lines outline box contours and red dashed lines show
-                    in-hand object contours.
+<!--                    Predictions made by our model compared to baseline methods in the Non-prehensile Box Pushing task.-->
+<!--                    Red dots indicate the rod and blue dots represent the box.-->
+<!--                    Our method closely approximates the ground truth and outperforms all the baseline methods.-->
+<!--                    For visualization, the blue dashed lines outline box contours and red dashed lines show-->
+<!--                    in-hand object contours.-->
                 </p>
             </div>
         </div>
@@ -293,7 +299,7 @@
         during the box pushing task and perform a clustering analysis.
     </p>
     <p>
-        We assess our state estimator across 145-step trajectories and record the estimated physics parameters at each step. PCA visualizations at four distinct timesteps show that the physics parameters gradually form clusters by box type. We also employ a linear classifier trained on these parameters to accurately predict box types to demonstrate these clusters’ linear separability. The classifier’s improving accuracy across timesteps underscores the state estimator’s proficiency in extracting and integrating box-specific information from the tactile observation history.
+        PCA visualizations at four distinct timesteps show that the physics parameters gradually form clusters by box type. We also employ a linear classifier trained on these parameters to accurately predict box types to demonstrate these clusters’ linear separability. The classifier’s improving accuracy across timesteps underscores the state estimator’s proficiency in extracting and integrating box-specific information from the tactile observation history.
     </p>
 
 
@@ -310,7 +316,8 @@
     <h1>Benchmarking Real-World Planning Performance</h1>
     <p>
         We first present quantitative results on box pushing. It can be observed
-        that, at every time step, our method is the one that is closest to the goal, indicating that our method is able to consistently find the most efficient pushes. This showcases that our method can identify the correct physics parameters for accurate dynamics prediction.
+        that, at every time step, our method is the one that is closest to the goal, indicating that our method is able to consistently find the most efficient pushes.
+<!--        This showcases that our method can identify the correct physics parameters for accurate dynamics prediction.-->
     </p>
 
     <div class="approach">
@@ -318,7 +325,8 @@
             <img src="assets/img/pushing_lineplot.png" style="width: 60%;">
             <div class="caption" style="text-align: left">
                 <p>
-                    Real-world planning performance on the box pushing task. Shaded regions denote the first and third quantiles. Note that different methods generally perform well on easier cases, leading to overlap between shadow regions. Our method has stable performance even for hard ones: its 75-percentile error is lower than the mean error of all other method.
+                    Real-world planning performance on the box pushing task. Shaded regions denote the first and third quantiles.
+<!--                    Note that different methods generally perform well on easier cases, leading to overlap between shadow regions. Our method has stable performance even for hard ones: its 75-percentile error is lower than the mean error of all other method.-->
                 </p>
             </div>
         </div>
@@ -332,23 +340,56 @@
             <img src="assets/img/pushing_results.png" style="width: 100%;">
             <div class="caption" style="text-align: left">
                 <p>
-                    Per-configuration results on the non-prehensile box pushing task. We report the minimum error to goal across 10 plan executions per trial, trial success rates, and number of execution steps to solve the task. A trial is labeled as a success if it achieves an error lower than 0.02 for point-wise MSE within 10 pushes.
+                    Per-configuration results on the non-prehensile box pushing task.
+<!--                    We report the minimum error to goal across 10 plan executions per trial, trial success rates, and number of execution steps to solve the task. A trial is labeled as a success if it achieves an error lower than 0.02 for point-wise MSE within 10 pushes.-->
                 </p>
             </div>
         </div>
 
     <p>
-        For the dense packing task, we compare our method against the strongest baseline in the pushing experiments. Our method is able to consistently achieve 2x as high success rate as the baseline across seen and unseen object sets, showcasing the effectiveness and generalizability of our approach.
+        For the dense packing task, we compare our method against the strongest baseline in the pushing experiments.
+        Our method is able to consistently achieve 2x as high success rate as the baseline across seen and unseen object sets.
+<!--        , showcasing the effectiveness and generalizability of our approach.-->
     </p>
 
     <div class="video_container" style="text-align: center">
             <img src="assets/img/packing_results.png" style="width: 60%;">
             <div class="caption" style="text-align: left">
                 <p>
-                    Success rates on the dense packing task. In the Unseen Objects setting, half or more of the objects in the tray are unseen. A trial is considered successful if the robot correctly determines feasible insertion locations and creates enough space (through deformation) to pack the object. The robot automatically attempts to pack the object when its end effector y-position exceeds a given threshold.
+                    Success rates on the dense packing task.
+<!--                    In the Unseen Objects setting, half or more of the objects in the tray are unseen. A trial is considered successful if the robot correctly determines feasible insertion locations and creates enough space (through deformation) to pack the object. The robot automatically attempts to pack the object when its end effector y-position exceeds a given threshold.-->
                 </p>
             </div>
         </div>
+
+
+    <h1>More Qualitative Results</h1>
+    <div style="height: 1.5vw;"></div>
+
+    <div class="video_container">
+        <video loop autoplay muted playsinline preload="metadata">
+            <source src="assets/videos/pushing-3x3.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <p>
+                Demos on pushing objects of various mass distributions.
+            </p>
+        </div>
+    </div>
+
+    <div style="height: 1.5vw;"></div>
+
+
+    <div class="video_container">
+        <video loop autoplay muted playsinline preload="metadata">
+            <source src="assets/videos/packing-3x3.mp4" type="video/mp4">
+        </video>
+        <div class="caption">
+            <p>
+                Demos on packing objects into boxes under various configuraitons.
+            </p>
+        </div>
+    </div>
 
     <h1>Conclusion</h1>
 
@@ -356,16 +397,18 @@
         We presented RoboPack, a framework for learning tactile-informed dynamics models for manipulating objects
         in multi-object scenes with varied physical properties. By integrating information from prior interactions
         from a compliant visual tactile sensor, our method adaptively updates estimated latent physics parameters,
-        resulting in improved physical prediction and downstream planning performance on two challenging manipulation
-        tasks, Non-Prehensile Box Pushing and Dense Packing. We hope that this is a step towards
+        resulting in improved physical prediction and downstream planning performance. We hope that this is a step towards
         robots that can seamlessly integrate information with multiple modalities from their environments to guide their
         decision-making.
     </p>
 
     <h1>BibTeX</h1>
-    <p class="bibtex">
-        Coming soon!
+    <p>
+        Coming soon.
     </p>
+<!--    <p class="bibtex">-->
+<!--        Coming soon!-->
+<!--    </p>-->
     <br>
 </div>
 </body>
