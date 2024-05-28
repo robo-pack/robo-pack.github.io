@@ -166,6 +166,15 @@ body, html {
     text-align: center;
 }
 
+.venue {
+    color: #8C1515;
+    font-family: "Source Serif 4", serif;
+    font-size: 1.2vw;
+    padding-top: 1.0vw;
+    text-align: center;
+    font-weight: bold;
+}
+
 .button-container {
     color: #53565A;
     justify-items: center;
